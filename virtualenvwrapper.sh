@@ -1176,9 +1176,6 @@ function mktmpenv {
         return $RC
     fi
 
-    # Change working directory
-    cdvirtualenv
-
     # Create the tmpenv marker file
     echo "This is a temporary environment. It will be deleted when you run 'deactivate'." | tee "$VIRTUAL_ENV/README.tmpenv"
 
